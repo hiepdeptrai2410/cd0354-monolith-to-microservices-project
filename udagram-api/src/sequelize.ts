@@ -9,5 +9,11 @@ export const sequelize = new Sequelize({
   'host': config.host,
 
   'dialect': config.dialect,
+  'dialectOptions': {
+    ssl: {
+      require: false, // Make sure SSL is required
+      rejectUnauthorized: false // Accept self-signed certificates (adjust based on your SSL setup)
+    }
+  },
   'storage': ':memory:',
 });

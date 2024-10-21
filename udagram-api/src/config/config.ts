@@ -1,3 +1,7 @@
+console.log(`POSTGRES_USERNAME: ${process.env.POSTGRES_USERNAME}`)
+console.log(`POSTGRES_PASSWORD: ${process.env.POSTGRES_PASSWORD}`)
+console.log(`POSTGRES_HOST: ${process.env.POSTGRES_HOST}`)
+
 export const config = {
   'username': process.env.POSTGRES_USERNAME,
   'password': process.env.POSTGRES_PASSWORD,
